@@ -1,4 +1,4 @@
-This repository hosts the code for the Kape Tanggero Coffee Shop Website, a multi-page site developed for the ITS121-1L Web Systems and Technologies 1 Laboratory course, Exercise #4. This educational project, authored by Ken Ivan Panganiban, is a fully responsive web presence for a fictional café that utilizes HTML5, CSS3, and Bootstrap 5 to deliver a navigable interface featuring various pages like the Menu, Gallery, and Contact, reflecting a modern, community-focused coffee shop brand.
+This repository hosts the code for the Kape Tanggero Coffee Shop Website, a multi-page site developed for the ITS121-1L Web Systems and Technologies 1 Laboratory course on MAPUA University, Exercise #4. This educational project, authored by Ken Ivan Panganiban, is a fully responsive web presence for a fictional café that utilizes HTML5, CSS3, and Bootstrap 5 to deliver a navigable interface featuring various pages like the Menu, Gallery, and Contact, reflecting a modern, community-focused coffee shop brand.
 
     Project Name: Kape Tanggero Coffee Shop Website
 
