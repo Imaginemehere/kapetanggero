@@ -1,0 +1,532 @@
+<!-- 
+ITS121-1L Web Systems and Technologies 1 Laboratory
+Exercise #4 - Kape Tanggero Coffee Shop Website
+Author: Ken Ivan Panganiban
+Date: October 31, 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kape Tanggero - Menu</title>
+    <link rel="icon" type="image/x-icon" href="img/KapeTanggeroLogo.jpg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="top">
+    
+    <!-- =================== NAVIGATION BAR =================== -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="img/KapeTanggeroLogo-Transparent.png" alt="Kape Tanggero Logo">
+                <span class="logo-text">Kape Tanggero</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- =================== PRODUCT CONTENT =================== -->
+    <div class="container main-container">
+        <h1>Our Menu</h1>
+        <p>Discover our carefully crafted selection of signature coffee drinks, hot beverages, and specialty frappes made with premium ingredients.</p>
+
+        <!-- SIGNATURE SERIES TABLE -->
+		<h2>Signature Series</h2>
+		<div class="table-responsive shadow rounded-3 overflow-hidden mb-4">
+			<table class="table product-table table-striped table-hover align-middle table-bordered border-secondary-subtle mb-0 caption-top">
+					<caption class="px-3 fst-italic">Best-selling handcrafted espresso drinks</caption>
+                <thead>
+                    <tr>
+						<th scope="col" class="ps-3">Beverage</th>
+						<th scope="col">Size</th>
+						<th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ube Espresso</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱165 / ₱185 / ₱195
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Matcha Espresso</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱155 / ₱165 / ₱195
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cinnamon Caramel</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱145 / ₱165 / ₱195
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brown Sugar</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱145 / ₱165 / ₱195
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cocoa Cappuccino</td>
+                        <td>12oz / 16oz</td>
+                        <td>
+                            ₱165 / ₱185
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Americano (Hot/Cold)</td>
+                        <td>Single / Double</td>
+                        <td>
+                            ₱115 / ₱135
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- HOT BEVERAGES TABLE -->
+		<h2>Hot Beverages</h2>
+		<div class="table-responsive shadow rounded-3 overflow-hidden mb-4">
+			<table class="table product-table table-striped table-hover align-middle table-bordered border-secondary-subtle mb-0 caption-top">
+					<caption class="px-3 fst-italic">Served hot – cozy comfort in every cup</caption>
+                <thead>
+                    <tr>
+						<th scope="col" class="ps-3">Beverage</th>
+						<th scope="col">Size</th>
+						<th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Americano</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱110 / ₱120 / ₱130
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caramel Latte</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱140 / ₱150 / ₱160
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brown Sugar</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱150 / ₱160 / ₱170
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dark Mocha</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱150 / ₱160 / ₱170
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Salted Caramel</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱150 / ₱160 / ₱170
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Spanish Latte</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱145 / ₱155 / ₱165
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- FRAPPE SERIES TABLE -->
+		<h2>Frappe Series</h2>
+		<div class="table-responsive shadow rounded-3 overflow-hidden mb-4">
+			<table class="table product-table table-striped table-hover align-middle table-bordered border-secondary-subtle mb-0 caption-top">
+					<caption class="px-3 fst-italic">Blended and refreshing – perfect for hot days</caption>
+                <thead>
+                    <tr>
+						<th scope="col" class="ps-3">Beverage</th>
+						<th scope="col">Size</th>
+						<th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ube-Based</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱210 / ₱230
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dark Mocha</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱210 / ₱165
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Salted Caramel</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱210 / ₱165
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Java Chip</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱210 / ₱165
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caramel Coffee Jelly</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱210 / ₱165
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cookies & Cream</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱210 / ₱170
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- BEVERAGE SERIES -->
+		<h2>Beverage Series</h2>
+		<div class="table-responsive shadow rounded-3 overflow-hidden mb-4">
+			<table class="table product-table table-striped table-hover align-middle table-bordered border-secondary-subtle mb-0 caption-top">
+					<caption class="px-3 fst-italic">Non-coffee refreshers and milk tea favorites</caption>
+                <thead>
+                    <tr>
+						<th scope="col" class="ps-3">Beverage</th>
+						<th scope="col">Size</th>
+						<th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Iced Tea (Lemon/Peach)</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱95 / ₱115
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Classic Lemonade</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱100 / ₱120
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Honey Calamansi</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱105 / ₱125
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Milk Tea (Classic / Wintermelon / Okinawa)</td>
+                        <td>16oz / 22oz</td>
+                        <td>
+                            ₱130 / ₱150
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Regular</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NON-CAFFEINE OPTIONS TABLE -->
+		<h2>Non-Caffeine Options</h2>
+		<div class="table-responsive shadow rounded-3 overflow-hidden mb-4">
+			<table class="table product-table table-striped table-hover align-middle table-bordered border-secondary-subtle mb-0 caption-top">
+				<caption class="px-3">Comforting non-caffeine choices for everyone</caption>
+                <thead>
+                    <tr>
+						<th scope="col" class="ps-3">Beverage</th>
+						<th scope="col">Size</th>
+						<th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hot Chocolate</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱140 / ₱150 / ₱160
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ube Milk</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱160 / ₱170 / ₱180
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Strawberry Milk</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱160 / ₱170 / ₱180
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Matcha Milk</td>
+                        <td>12oz / 16oz / 22oz</td>
+                        <td>
+                            ₱170 / ₱180 / ₱190
+                            <button class="cart-button">Add to Cart</button>
+                            <select class="size-select">
+                                <option>Size: Small</option>
+                                <option>Size: Medium</option>
+                                <option>Size: Large</option>
+                            </select>
+                            <button class="buy-button">Order Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </a>
+
+    <!-- =================== FOOTER =================== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kape Tanggero by <u>Ken Ivan Panganiban</u>. This website is for educational use only.</p>
+
+            <div class="social-links">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/KAPE.Tanggero/" target="_blank" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-1c-.8 0-1 .4-1 1v1h2.6l-.4 3H14v7A10 10 0 0 0 22 12"/></svg>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/kape.tanggero/" target="_blank" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
